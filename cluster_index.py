@@ -264,7 +264,7 @@ def main():
     args = parser.parse_args()
     search = search_for_cluster(args.path_to_DCD,args.centroid_file, args.path_to_output, args.path_to_index, bool(args.per_clust_output), args.threads, args.max_num_of_cluster_at_once, bool(args.verbose))
     if args.verbose : print("Path To Index: ", search.path_to_index)
-    print("Documentation, support and updates available at http://www.diamondsearch.org")
+    print("Documentation available at https://github.com/drostlab/deepclust_dataretrieval")
     print("Please cite: https://www.biorxiv.org/content/10.1101/2023.01.24.525373v1 bioRxiv (2023)")
 
     search.dataRetrievalParallel(args.centroids.split(sep=","))
