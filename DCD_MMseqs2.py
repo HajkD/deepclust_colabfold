@@ -143,7 +143,8 @@ def main():
                         help="Path to temporary directory", )
     parser.add_argument("--threads", type=int, default=1,
                         help="Threads")
-
+    print("Documentation available at https://github.com/drostlab/deepclust_colabfold")
+    print("Please cite: https://www.biorxiv.org/content/10.1101/2023.01.24.525373v1 bioRxiv (2023)")
     args = parser.parse_args()
     dcd_mm = DCD_MMSeqs(path_to_mmseqs = args.path_to_mmseqs, path_to_DCD = args.path_to_DCD,
                         path_to_DCD_index = args.path_to_DCD_index,
