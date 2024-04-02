@@ -7,16 +7,25 @@ To make use of the DeepClust Database in the context of Protein Structure Predic
 *show this help message and exit*  
 [-path_to_query PATH_TO_QUERY]  
 *Path to query (Profile or sequence)*  
+Must be in MMseqs2 format; call  
+~~~
+mmseqs createdb input.faa output.mm 
+~~~  
 [-path_to_mmseqs PATH_TO_MMSEQS]  
 *Path to MMseqs*  
+Download [MMseqs2](https://github.com/soedinglab/MMseqs2).  
 [-path_to_DCD PATH_TO_DCD]  
 *Location of the DeepClust database in parquet format*  
-[-path_to_centroids PATH_TO_CENTROIDS]  
-*Path to DeepClust centroids in MMseqs format*  
-[--path_to_uniref PATH_TO_UNIREF]  
-*Path to UniRef30 in MMseqs format*  
+Download [DeepClust Database](https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F).  
 [-path_to_DCD_index PATH_TO_DCD_INDEX]  
 *Location of the DeepClust index*  
+Download [DeepClust Database Index](https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F).  
+[-path_to_centroids PATH_TO_CENTROIDS]  
+*Path to DeepClust centroids in MMseqs format*  
+Download (clust_bigg2_mmseqs_db)[https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F] in MMseqs2 format, containing only clusters with more than 2 members for faster alignment.  
+[--path_to_uniref PATH_TO_UNIREF]  
+*Path to UniRef30 in MMseqs format*  
+Download (uniref30_2302.tar.gz)[https://colabfold.mmseqs.com/] or later versions.  
 [-path_to_output PATH_TO_OUTPUT]  
 *Path to output*  
 [-path_to_tmp PATH_TO_TMP]  
@@ -35,7 +44,7 @@ python3 /PATH/TO/DCD_MMseqs2.py --threads 32 -path_to_query /PATH/TO/casp13_14_1
 This took around 1 hour and 50 minutes on 32 Threads.  
 Evaluation of the results was done with [TMalign](https://zhanggroup.org/TM-align/).  
 #### TM scores DeepClust against Colabfold:  
-Crosses are CASP targets on which Colabfold was optimized.
+Crosses are CASP targets on which Colabfold was optimized.  
 ![](DCDvsColab.png)  
 On the CASP14 targets, Colabfold outperforms the DeepClust Pipeline.
 Interestingly the DeepClust Pipeline performs slightly better on CASP15 targets.
