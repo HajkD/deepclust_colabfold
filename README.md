@@ -34,9 +34,13 @@ Download (uniref30_2302.tar.gz)[https://colabfold.mmseqs.com/] or later versions
 *Threads*  
 
 ## Example:
+The query sequences here are a few targets from recent [CASP](https://predictioncenter.org/index.cgi) experiments, which were mentioned in the [DeepMSA2](https://www.nature.com/articles/s41592-023-02130-4) publication (Figure 3A).
+Not all of these could be evaluated since CASP hasn't released all the templates yet.  
+To create the casp13_14_15.mm from a FASTA formatted file call:  
+~~~
+mmseqs createdb casp13_14_15.fa casp13_14_15.mm
+~~~
 This call executes the ColabFold search against first the Uniref30 Database and then the DeepClust Database.
-The query sequences here are a few targets from recent [CASP](https://predictioncenter.org/index.cgi) experiments, which were mentioned in the [DeepMSA2](https://www.nature.com/articles/s41592-023-02130-4) publication.
-Not all of these could be evaluated since CASP hasn't released all the templates yet.
 ~~~ 
 python3 /PATH/TO/DCD_MMseqs2.py --threads 32 -path_to_query /PATH/TO/casp13_14_15.mm -path_to_mmseqs /PATH/TO/mmseqs -path_to_DCD /PATH/TO/DeepClustParquet/joined_with_index_RowGroupFinal.parquet -path_to_centroids /PATH/TO/DeepClustCentroids/clust_bigg_2.mmseqs --path_to_uniref /PATH/TO/mmseqs_db/uniref30_2302_db -path_to_DCD_index /PATH/TO/clust_index_RowGroup.parquet -path_to_output /PATH/TO/Output/ -path_to_tmp /PATH/TO/dcd_colab_tmp/
 ~~~ 
