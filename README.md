@@ -25,7 +25,7 @@ Download [DeepClust Database Index](https://objectstore.hpccloud.mpcdf.mpg.de/de
 Download [clust_bigg2_mmseqs_db](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html) in MMseqs2 format, containing only clusters with more than 2 members for faster alignment.  
 [--path_to_uniref PATH_TO_UNIREF]  
 *Path to UniRef30 in MMseqs format*  
-Download (uniref30_2302.tar.gz)[https://colabfold.mmseqs.com/] or later versions.  
+Download [uniref30_2302.tar.gz](https://colabfold.mmseqs.com/) or later versions.  
 [-path_to_output PATH_TO_OUTPUT]  
 *Path to output*  
 [-path_to_tmp PATH_TO_TMP]  
