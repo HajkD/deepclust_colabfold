@@ -16,7 +16,7 @@ mmseqs createdb input.faa output.mm
 Download [MMseqs2](https://github.com/soedinglab/MMseqs2).  
 [-path_to_DCD PATH_TO_DCD]  
 *Location of the DeepClust database in parquet format*  
-Download [DeepClust Database]([https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html)).  
+Download [DeepClust Database](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html).  
 [-path_to_DCD_index PATH_TO_DCD_INDEX]  
 *Location of the DeepClust index*  
 Download [DeepClust Database Index]([https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html)).  
