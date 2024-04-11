@@ -19,10 +19,10 @@ Download [MMseqs2](https://github.com/soedinglab/MMseqs2).
 Download [DeepClust Database](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html).  
 [-path_to_DCD_index PATH_TO_DCD_INDEX]  
 *Location of the DeepClust index*  
-Download [DeepClust Database Index]([https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html)).  
+Download [DeepClust Database Index](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html).  
 [-path_to_centroids PATH_TO_CENTROIDS]  
 *Path to DeepClust centroids in MMseqs format*  
-Download (clust_bigg2_mmseqs_db)[[https://datashare.mpcdf.mpg.de/s/WrGg0x9jsuashqo?path=%2F](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html)] in MMseqs2 format, containing only clusters with more than 2 members for faster alignment.  
+Download [clust_bigg2_mmseqs_db](https://objectstore.hpccloud.mpcdf.mpg.de/deepclust/index.html) in MMseqs2 format, containing only clusters with more than 2 members for faster alignment.  
 [--path_to_uniref PATH_TO_UNIREF]  
 *Path to UniRef30 in MMseqs format*  
 Download (uniref30_2302.tar.gz)[https://colabfold.mmseqs.com/] or later versions.  
